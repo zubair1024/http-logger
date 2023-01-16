@@ -5,7 +5,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prod:start": "NODE_ENV=production pm2 start index.mjs --name logger --merge-logs --log-date-format=\"YYYY-MM-DD HH:mm\""
   },
   "keywords": [],
   "author": "",
